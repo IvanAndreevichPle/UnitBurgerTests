@@ -100,12 +100,12 @@ public class TestBurger {
         Mockito.when(cutlet.getName()).thenReturn("cutlet");
         Mockito.when(cutlet.getType()).thenReturn(FILLING);
 
-        String expected = "(==== black bun ====)\r\n" +
-                "= sauce chili sauce =\r\n" +
-                "= filling cutlet =\r\n" +
-                "(==== black bun ====)\r\n" +
-                "\r\n" +
-                "Price: 7000,000000\r\n";
+        String expected = "(==== black bun ====)\n" +
+                "= sauce chili sauce =\n" +
+                "= filling cutlet =\n" +
+                "(==== black bun ====)\n" +
+                "\n" +
+                "Price: 7000,000000\n";
 
         Assert.assertEquals(expected, burger.getReceipt());
     }
